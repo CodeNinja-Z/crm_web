@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Layout</title>
+  <link rel="stylesheet" href="/style.css" type="text/css">
+</head>
+
+<body>
+  <div class="crm">
+    <header>
+        <h1>Customer Relationship Management</h1>
+    </header>
+  
+    <div class="main">
+      <div class="main-menu">
+        <ul>
+          <li><a href="/contacts">Display all contacts</a></li>
+          <li><a href="/contacts/new">Add a new contact</a></li>
+          <li><a href="/display_an_attribute">Display an attribute</a></li>
+        </ul>
+      </div>
+
+      <!-- This is where I want the content to go -->
+      <div class="content">
+        <%= yield %>
+      </div>
+    </div>
+
+    <footer>
+      <h1>Copyright &copy; Carlos Zhao - 
+      <a href="https://github.com/HongzhiZhao">Git</a> - 
+      <a href="mailto:blacklight728@gmail.com">Contact</a>
+      </h1>
+    </footer>
+  </div>
+</body>
+</html>

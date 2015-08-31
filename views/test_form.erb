@@ -1,0 +1,71 @@
+<% if @success %>
+  <p>Your film was successfully saved</p>
+<% end %>
+
+<form action="/films" method="post">
+    <!-- input field -->
+    <input type="number" name="Submit"> 
+    <input type="date" name="Submit"> 
+    <input type="search" name="Submit"> 
+    <input type="url" name="Submit"> 
+    <input type="tel" name="Submit"> 
+    <input type="password" name="Submit">
+
+    <!-- input radio / checkbox -->
+    <fieldset>
+      <legend>Rating</legend>
+      <label for="">
+        <input type="radio" name="rating" value="1"> <span>1</span>
+      </label>
+
+      <label for="">
+        <input type="radio" name="rating" value="1"> <span>2</span>
+      </label>
+      <input type="radio" name="rating" value="3">
+      <input type="radio" name="rating" value="4">
+      <input type="radio" name="rating" value="5">
+    </fieldset>
+
+    <!-- checkbox -->
+    <fieldset>
+      <legend>Genres</legend>
+      <input type="checkbox" name="genre[]" value="Advanture">
+      <input type="checkbox" name="genre[]" value="Drama">
+      <input type="checkbox" name="genre[]" value="Romance">
+      <input type="checkbox" name="genre[]" value="Thriller">
+      <input type="checkbox" name="genre[]" value="Comedy">
+    </fieldset>
+
+    <!-- textarea -->
+    <label for="film-description">Description</label>
+    <textarea name="description" id="film-description" cols="30" rows="10" placeholder="Give it a descriptrion">
+      <!-- white space matters here -->
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi consequatur possimus accusantium sit voluptatum quaerat aliquam laborum sunt soluta vero totam corrupti omnis tempora voluptate, voluptatibus dicta, harum deleniti nobis!
+      <!-- white space matters here -->
+    </textarea>
+
+    <!-- select / option -->
+    <!-- this built-in dropdown list can't be styled at all, so it's not a good idea using this-->
+    <!-- you want a rendered dropdown list, you must write your own html and css trick -->
+    <select name="country" id="film-country">
+    <option value="">Select a country</option>
+      <option value="US">United States</option>
+      <option value="CA">Canada</option>
+      <option value="JP">Japan</option>
+      <option value="MX">Mexico</option>
+    </select>
+
+    <!-- file -->
+    <input type="file" id="film-poster" name="poster">
+
+    <!-- hidden -->
+    <input type="hidden" name="_delete" value="delete">
+
+    <!-- input submit /button -->
+    <!-- input field can't be rendered at all -->
+    <!-- if you want to render a button, use button tag rather than input field -->
+    <input type="submit" value="Create Film">
+    <button type="submit">
+      <img src="a picture" alt="">
+    </button>
+</form>

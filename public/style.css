@@ -1,0 +1,113 @@
+/* normalize */
+html body{
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: 0;
+}
+
+body{
+  background-color: #707070;
+}
+.main{
+  height: 560px;
+  overflow: hidden;
+}
+.content{
+  height: 100%;
+  float: right;
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background: url("crm1.jpg") no-repeat;
+  background-size:100% 100%;
+}
+.main-menu{
+  width: 20%;
+  height: 100%;
+  /*margin: 0 auto;*/
+  float: left;
+  background-color: #606060;
+}
+.main-menu p{
+  color: white;
+}
+.main-menu a{
+  text-decoration: none;
+}
+header{
+  overflow: hidden;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  background: -webkit-linear-gradient(#606060, #808080); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#606060, #808080); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#606060, #808080); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#606060, #808080); /* Standard syntax */
+}
+.crm{
+  width: 1280px;
+}
+footer{
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  font-size: 0.7em;
+  background: -webkit-linear-gradient(#808080, #606060); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#808080, #606060); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#808080, #606060); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#808080, #606060); /* Standard syntax */
+}
+footer h1{
+  color: white;
+}
+footer a{
+  color: blue;
+  text-decoration: none;
+  text-shadow: 1px 1px;
+}
+h1{
+  text-align: center;
+  color: white;
+  margin: 0 auto;
+  text-shadow: 2px 2px blue;
+}
+h2, p, a{
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px blue;
+}
+.welcome{
+  color: white;
+}
+.new-contact{
+  color: white;
+}
+li, a{
+  list-style: none;
+  color: white;
+}
+form input[type="text"]{
+  display: block;
+
+}
+form input[type="submit"]{
+  float: left;
+}
+label[for=notes]{
+  vertical-align: top;
+}
+#notes{
+  height: 100px;
+}
+.textbox{
+  width: 200px;
+}
+.new-contact-form th, .edit-contact-form th{
+  text-align: right;
+  margin: 0 auto;
+  color: white;
+}
+table{
+  margin: 0 auto;
+}
